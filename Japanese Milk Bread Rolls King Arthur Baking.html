@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html dir="ltr" prefix="og: https://ogp.me/ns#" class=" js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"><iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px none; display: none;"></iframe><script type="text/javascript" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/main.js"></script><script type="text/javascript" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/vendor.js"></script><script type="text/javascript" async="" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/a"></script><script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/nr-1210.js"></script><script async="" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/search-insights.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6b8b93db2d",applicationID:"401100790"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="canonical" href="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-recipe.html">
+<link rel="image_src" href="https://www.kingarthurbaking.com/sites/default/files/recipe_legacy/5957-3-large.jpg">
+<meta name="description" content="Soft, pillowy bread rolls made using a special Japanese technique.">
+<meta property="og:site_name" content="King Arthur Baking">
+<meta property="og:url" content="https://www.kingarthurbaking.com/recipes/japanese-milk-bread-rolls-recipe">
+<meta property="og:title" content="Japanese Milk Bread Rolls">
+<meta property="og:description" content="Soft, pillowy bread rolls made using a special Japanese technique.">
+<meta property="og:image" content="https://www.kingarthurbaking.com/sites/default/files/recipe_legacy/5957-3-large.jpg">
+<meta name="p:domain_verify" content="0141af6904f9685eaafe9b65c80cf9d3">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@KingArthurFlour">
+<meta name="twitter:creator" content="@KingArthurFlour">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>var ct_check_js_val = 'ea3b5c83567cc25886111f3959614b56';</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Recipe",
+            "keywords": "Sandwich bread, Sandwich buns \u0026 dinner rolls, Tangzhong",
+            "name": "Japanese Milk Bread Rolls",
+            "description": "\u003Cp\u003EAlso referred to as Hokkaido milk bread, these rolls are incredibly soft and airy thanks to a simple technique involving a roux \u0022starter,\u0022 known as tangzhong. The roux is mixed into the final dough, producing wonderfully tender bread each and every time.\u003C/p\u003E",
+            "recipeYield": "8 to 10 rolls, depending on size",
+            "datePublished": "June 25, 2015 at 8:00pm",
+            "prepTime": "PT30M",
+            "cookTime": "PT30M",
+            "totalTime": "PT3H57M",
+            "recipeIngredient": [
+                "3 tablespoons (43g) water",
+                "3 tablespoons (43g) whole milk",
+                "2 tablespoons (14g) \u003Ca href=\u0022https://shop.kingarthurbaking.com/items/king-arthur-unbleached-bread-flour-8-lb\u0022 target=\u0022_blank\u0022 data-name=\u0022King Arthur Unbleached Bread Flour - 8 lb.\u0022 data-sku=\u0022211210\u0022 data-price=\u0022$5.33\u0022\u003EKing Arthur Unbleached Bread Flour\u003C/a\u003E",
+                "2 1/2 cups (298g) \u003Ca href=\u0022https://shop.kingarthurbaking.com/items/king-arthur-unbleached-bread-flour-8-lb\u0022 target=\u0022_blank\u0022 data-name=\u0022King Arthur Unbleached Bread Flour - 8 lb.\u0022 data-sku=\u0022211210\u0022 data-price=\u0022$5.33\u0022\u003EKing Arthur Unbleached Bread Flour\u003C/a\u003E",
+                "2 tablespoons (14g) \u003Ca href=\u0022https://shop.kingarthurbaking.com/items/bakers-special-dry-milk-16-oz\u0022 target=\u0022_blank\u0022 data-name=\u0022Baker\u0026#039;s Special Dry Milk - 16 oz.\u0022 data-sku=\u0022100071\u0022 data-price=\u0022$9.95\u0022\u003EBaker\u0026#039;s Special Dry Milk\u003C/a\u003E or nonfat dry milk",
+                "1/4 cup (50g) sugar",
+                "1 teaspoon (6g) salt",
+                "1 tablespoon \u003Ca href=\u0022https://shop.kingarthurbaking.com/items/saf-red-instant-yeast-16-oz\u0022 target=\u0022_blank\u0022 data-name=\u0022SAF Red Instant Yeast - 16 oz.\u0022 data-sku=\u0022201264\u0022 data-price=\u0022$5.95\u0022\u003Einstant yeast\u003C/a\u003E",
+                "1/2 cup (113g) whole milk",
+                "1 large egg",
+                "4 tablespoons (57g) unsalted butter melted"
+            ],
+            "recipeInstructions": "\u003Cp\u003EWeigh your flour; or measure it by gently spooning it into a cup, then sweeping off any excess.\u003C/p\u003E\n, \u003Cp\u003E\u003Cstrong\u003ETo make the tangzhong:\u003C/strong\u003E Combine all of the ingredients in a small saucepan, and whisk until no lumps remain.\u003C/p\u003E\n\n\u003Cdiv data-embed-button=\u0022media\u0022 data-entity-embed-display=\u0022view_mode:media.full\u0022 data-entity-type=\u0022media\u0022 data-entity-uuid=\u00224eb68b6d-1bb4-479d-a66a-47bf2f3be1cc\u0022 data-langcode=\u0022en\u0022 class=\u0022embedded-entity\u0022\u003E    \u003Cimg src=\u0022/sites/default/files/2020-12/step-2_0.jpg\u0022 width=\u0022512\u0022 height=\u0022342\u0022 alt=\u0022Perfectly Pillowy Cinnamon Rolls – Step 2\u0022 loading=\u0022lazy\u0022 /\u003E\u003C/div\u003E\n, \u003Cp\u003EPlace the saucepan over low heat, and cook the mixture, whisking constantly, until thick and the whisk leaves lines on the bottom of the pan, about 3 to 5 minutes.\u003C/p\u003E, \u003Cp\u003ETransfer the tangzhong to a small mixing bowl or measuring cup and let it cool to room temperature.\u003C/p\u003E, \u003Cp\u003E\u003Cstrong\u003ETo make the dough: \u003C/strong\u003ECombine the tangzhong with the remaining dough ingredients, then mix and knead — by hand, mixer, or bread machine — until a smooth, elastic dough forms.\u003C/p\u003E\n\n\u003Cdiv data-embed-button=\u0022media\u0022 data-entity-embed-display=\u0022view_mode:media.full\u0022 data-entity-type=\u0022media\u0022 data-entity-uuid=\u0022ec97a1b1-608e-4236-adce-8625e534fc35\u0022 data-langcode=\u0022en\u0022 class=\u0022embedded-entity\u0022\u003E    \u003Cimg src=\u0022/sites/default/files/2020-12/step-5.gif\u0022 width=\u0022512\u0022 height=\u0022342\u0022 alt=\u0022Perfectly Pillowy Cinnamon Rolls – Step 5\u0022 loading=\u0022lazy\u0022 /\u003E\u003C/div\u003E\n, \u003Cp\u003EShape the dough into a ball, and let it rest in a lightly greased covered bowl for 60 to 90 minutes, until puffy but not necessarily doubled in bulk.\u003C/p\u003E\n\n\u003Cdiv data-embed-button=\u0022media\u0022 data-entity-embed-display=\u0022view_mode:media.full\u0022 data-entity-type=\u0022media\u0022 data-entity-uuid=\u002215d1c522-12da-4131-87cd-b27d02445830\u0022 data-langcode=\u0022en\u0022 class=\u0022embedded-entity\u0022\u003E    \u003Cimg src=\u0022/sites/default/files/2020-12/step-7.gif\u0022 width=\u0022512\u0022 height=\u0022342\u0022 alt=\u0022Perfectly Pillowy Cinnamon Rolls – Step 7\u0022 loading=\u0022lazy\u0022 /\u003E\u003C/div\u003E\n, \u003Cp\u003EGently deflate the dough, divide it into 8 equal pieces (for large rolls) or 10 equal pieces (for medium-sized rolls), and shape each piece into a ball.\u003C/p\u003E\n\n\u003Cdiv data-embed-button=\u0022media\u0022 data-entity-embed-display=\u0022view_mode:media.full\u0022 data-entity-type=\u0022media\u0022 data-entity-uuid=\u0022bfd1f81b-5735-47c7-9aec-8daea0523985\u0022 data-langcode=\u0022en\u0022 class=\u0022embedded-entity\u0022\u003E    \u003Cimg src=\u0022/sites/default/files/2021-02/step-10_0.gif\u0022 width=\u0022512\u0022 height=\u0022342\u0022 alt=\u0022Stuffed Bagel Buns – Step 7\u0022 loading=\u0022lazy\u0022 /\u003E\u003C/div\u003E\n, \u003Cp\u003EPlace the rolls into a lightly greased \u003Ca href=\u0022https://shop.kingarthurflour.com/items/king-arthur-round-cake-pan-8\u0022\u003E8\u0022\u003C/a\u003E or \u003Ca href=\u0022https://shop.kingarthurflour.com/items/king-arthur-round-cake-pan-9\u0022\u003E9\u0022 round cake pan\u003C/a\u003E. Cover the pan, and let the rolls rest for 40 to 50 minutes, until puffy.  \u003C/p\u003E, \u003Cp\u003EPreheat the oven to 350°F. Brush the rolls with milk or egg wash (1 large egg beaten with 1 tablespoon cold water), and bake for 25 to 30 minutes, until golden brown on top; a digital thermometer inserted into the center of the middle roll should read at least 190°F.\u003C/p\u003E, \u003Cp\u003ERemove the rolls from the oven. Allow them to cool in the pan for 10 minutes, then transfer them to a rack to cool completely.\u003C/p\u003E",
+            "author": {
+                "@type": "Organization",
+                "name": "King Arthur Flour",
+                "url": "https://www.kingarthurflour.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.kingarthurflour.com/themes/custom/kaf_nextgenweb/images/logo--full.svg"
+                }
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://www.kingarthurbaking.com/sites/default/files/recipe_legacy/5957-3-large.jpg"
+            },
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "servingSize": "1 roll (90g)",
+                "calories": "250",
+                "carbohydrateContent": "37g",
+                "cholesterolContent": "40mg",
+                "fiberContent": "1g",
+                "proteinContent": "8g",
+                "sodiumContent": "320mg",
+                "sugarContent": "9g",
+                "fatContent": "8g",
+                "saturatedFatContent": "4.5g",
+                "transFatContent": "0g"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.70",
+                "ratingCount": "444"
+            }
+        }
+    ]
+}</script>
+<link rel="shortcut icon" href="https://www.kingarthurbaking.com/themes/custom/kaf_nextgenweb/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="revision" href="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-recipe.html">
+<script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/google_tag.js" defer="defer"></script>
+
+    <title>Japanese Milk Bread Rolls | King Arthur Baking</title>
+    <link rel="stylesheet" media="all" href="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/css_xikE5gSB_-ct81VrV23Eh52atP16u2VHbSNvpD8Hc9k.css">
+<link rel="stylesheet" media="all" href="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/qwi2npt.css">
+<link rel="stylesheet" media="all" href="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/css_gtg_En7Sj6G9tpJZqcUkHgsZW2wzxzOm40dPSP71El4.css">
+
+    
+  
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"true","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-2ef13856-832a-475c-8f2c-5e49b97cd7a4","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"true","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="SQQ6J-MS2G2-ZFAMA-2TTB7-72K6R",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"SQQ6J-MS2G2-ZFAMA-2TTB7-72K6R",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="true"=="true"?1:0,t="",n="l3hm6qdinx5tcyhyjciq-f-5c2839d8e-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"1068635","ak.ai":parseInt("635712",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"h2","ak.rid":"2e032ec","ak.r":32054,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"94.206.207.0","ak.cport":59240,"ak.gh":"104.109.251.45","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1626884241","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==LlxUm0kietH/h7bjAoK0AC435HJBM2PrTIUGrzHt4wEVtQVS8fihIPBCrYfFtuwKNeCKSE1lYFGqmOZhfGrGgAy/0IuoQGpmioNdlhAy58EZhMhD1AiUpTM8ntJO1cK5k5GBp8Tfo0c4PpK3zEGZrpBs1TJr1CPY6XoVh/VlIgu2rp7HjPAk3KMB7KAJtBkrGJmC8f70hu2DifGKuCWauqTvjZDzm1Q3QzhGOBpD+RL2GysDV64vMFrD8PiOJpygSGf4LyW/Wq0Jw18YOrlpkKkr+Q2gh6GnOx4VT99EwK3bQVjbnLa3A/13lc+QgHpex4HjyK/EDvRzsvXYxPOBXJUS/fLO+zDkOex7bd0w+rr57w1S04mhfrPoFaxF2+oj5Rl39ChAS5cR1GC/Ru091LglBjIoeHo9ez+f6tiMJsM=","ak.pv":"3","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><style hs-beacon="active" data-styled-version="5.1.1"></style></head>
+  <body class="has-subnav path-node page-node-type-recipe eu-cookie-compliance-status-null eu-cookie-compliance-popup-open">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M867KWL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div class="page">
+
+  <header class="header" role="banner">
+      <div class="region region-promo-bar">
+    <div id="block-kafpromobar" class="block block-kaf-promo-bar block-kaf-promo-bar-block">
+  
+    
+      <div class="kaf-promo-bar js-kaf-promo-bar"></div>
+
+  </div>
+
+  </div>
+
+    <div class="header__wrap">
+        <div class="region region-header">
+    
+<div id="block-kaf-nextgenweb-branding" class="block block-branding">
+            <a href="https://www.kingarthurbaking.com/" aria-label="King Arthur Baking Company home page" rel="home" class="site-logo">
+        <img class="brand-lg" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/king-arthur-baking2x.png" alt="King Arthur Baking Company">
+        <img class="brand-sm" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/crown2x.png" alt="King Arthur Baking Company">
+      </a>
+      </div>
+<div id="block-kafsubmenu" class="block block-kaf-submenu">
+  
+    
+      <ul class="mnav-l1" id="mobile-nav" role="navigation" aria-labelledby="mnav-trigger" tabindex="-1">
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://shop.kingarthurbaking.com/shop-home/" class="mobile-subnav-l1">Shop</a></span>
+
+                  
+    </li>
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes" class="mobile-subnav-l1">Recipes</a></span>
+
+                    <button class="mnav-more"><span class="visually-hidden">Expand Recipes</span></button>
+
+        <div class="mnav-l2--wrapper mnav-wrapper" aria-hidden="true">
+          <div class="mnav-header">
+            <button class="mnav-back"><span class="visually-hidden">Collapse Recipes</span></button>
+            <h3 class="mnav-l2--title">Recipes</h3>
+          </div>
+          <ul class="mnav-l2">
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><span class="mobile-subnav-l2">Categories</span></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Categories</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Categories</span></button>
+                      <h4 class="mnav-l3--title">Categories</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/biscuits-shortcakes" class="mobile-subnav-l3">Biscuits &amp; Shortcakes</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/bread" class="mobile-subnav-l3">Bread</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/buns-rolls" class="mobile-subnav-l3">Buns &amp; Rolls</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/cake" class="mobile-subnav-l3">Cake</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/cookies-bars" class="mobile-subnav-l3">Cookies &amp; Bars</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/muffins-popovers" class="mobile-subnav-l3">Muffins &amp; Popovers</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/pancakes-waffles" class="mobile-subnav-l3">Pancakes &amp; Waffles</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/pastry" class="mobile-subnav-l3">Pastry</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/pie" class="mobile-subnav-l3">Pie</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/scones" class="mobile-subnav-l3">Scones</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><span class="mobile-subnav-l3">—</span></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes#categories" class="mobile-subnav-l3">See All Categories</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections" class="mobile-subnav-l2">Collections</a></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Collections</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Collections</span></button>
+                      <h4 class="mnav-l3--title">Collections</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections/new-from-the-test-kitchen" class="mobile-subnav-l3">New from the Test Kitchen</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections/best-chocolate-recipes" class="mobile-subnav-l3">Best Chocolate Recipes</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections/recipes-to-bake-with-kids" class="mobile-subnav-l3">Recipes to Bake With Kids</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections/sourdough-discard-recipes" class="mobile-subnav-l3">Sourdough Discard Recipes</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections/recipes-with-5-ingredients-or-fewer" class="mobile-subnav-l3">5 Ingredients or Fewer</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><span class="mobile-subnav-l3">—</span></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/collections" class="mobile-subnav-l3">View All Recipe Collections</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><span class="mobile-subnav-l2">Resources</span></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Resources</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Resources</span></button>
+                      <h4 class="mnav-l3--title">Resources</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipebox" class="mobile-subnav-l3">Recipe Box</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/bakers-hotline" class="mobile-subnav-l3">Bakers Hotline</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/ingredient-weight-chart" class="mobile-subnav-l3">Ingredient Weight Chart</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/videos/baking-skills/how-to-measure-flour" class="mobile-subnav-l3">How to Measure Flour</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/recipes/resources/recipe-success-guide" class="mobile-subnav-l3">Recipe Success Guide</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                      </ul>
+        </div>
+            
+    </li>
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn" class="mobile-subnav-l1">Learn</a></span>
+
+                    <button class="mnav-more"><span class="visually-hidden">Expand Learn</span></button>
+
+        <div class="mnav-l2--wrapper mnav-wrapper" aria-hidden="true">
+          <div class="mnav-header">
+            <button class="mnav-back"><span class="visually-hidden">Collapse Learn</span></button>
+            <h3 class="mnav-l2--title">Learn</h3>
+          </div>
+          <ul class="mnav-l2">
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides" class="mobile-subnav-l2">Baking Guides</a></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Baking Guides</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Baking Guides</span></button>
+                      <h4 class="mnav-l3--title">Baking Guides</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides/pie" class="mobile-subnav-l3">Pie Baking</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides/sourdough" class="mobile-subnav-l3">Sourdough Baking</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides/scone-baking" class="mobile-subnav-l3">Scone Baking</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides/gluten-free" class="mobile-subnav-l3">Gluten-Free Baking</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><span class="mobile-subnav-l3">—</span></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/guides" class="mobile-subnav-l3">View All Baking Guides</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/videos" class="mobile-subnav-l2">Videos</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/baking-school" class="mobile-subnav-l2">Baking School</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><span class="mobile-subnav-l2">Resources</span></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Resources</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Resources</span></button>
+                      <h4 class="mnav-l3--title">Resources</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/resources/tools-and-pans" class="mobile-subnav-l3">Tools and Pans</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/resources/baking-tips-techniques" class="mobile-subnav-l3">Baking Tips and Techniques</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/resources/yeast" class="mobile-subnav-l3">All About Yeast</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/resources/high-altitude-baking" class="mobile-subnav-l3">High-Altitude Baking</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/learn/ingredient-weight-chart" class="mobile-subnav-l3">Ingredient Weight Chart</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                      </ul>
+        </div>
+            
+    </li>
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/about" class="mobile-subnav-l1">About</a></span>
+
+                    <button class="mnav-more"><span class="visually-hidden">Expand About</span></button>
+
+        <div class="mnav-l2--wrapper mnav-wrapper" aria-hidden="true">
+          <div class="mnav-header">
+            <button class="mnav-back"><span class="visually-hidden">Collapse About</span></button>
+            <h3 class="mnav-l2--title">About</h3>
+          </div>
+          <ul class="mnav-l2">
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/about/mission-impact" class="mobile-subnav-l2">Mission &amp; Impact</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/about/our-products" class="mobile-subnav-l2">Our Products</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/visit" class="mobile-subnav-l2">Visit Us</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/about/bakeforgood" class="mobile-subnav-l2">Bake for Good</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/about/history" class="mobile-subnav-l2">Our History</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom" class="mobile-subnav-l2">Newsroom</a></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Newsroom</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Newsroom</span></button>
+                      <h4 class="mnav-l3--title">Newsroom</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom" class="mobile-subnav-l3">Newsroom</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom/press-kit" class="mobile-subnav-l3">Press Kit</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom/company-stories" class="mobile-subnav-l3">Company Stories</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom/press-releases" class="mobile-subnav-l3">Press Releases</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/newsroom/in-the-press" class="mobile-subnav-l3">In the Press</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                      </ul>
+        </div>
+            
+    </li>
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/blog" class="mobile-subnav-l1">Blog</a></span>
+
+                    <button class="mnav-more"><span class="visually-hidden">Expand Blog</span></button>
+
+        <div class="mnav-l2--wrapper mnav-wrapper" aria-hidden="true">
+          <div class="mnav-header">
+            <button class="mnav-back"><span class="visually-hidden">Collapse Blog</span></button>
+            <h3 class="mnav-l2--title">Blog</h3>
+          </div>
+          <ul class="mnav-l2">
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/blog-category/recipe" class="mobile-subnav-l2">Recipes</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/blog-category/tips-techniques" class="mobile-subnav-l2">Tips + Techniques</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/blog-category/story" class="mobile-subnav-l2">Stories</a></span>
+
+                                                
+              </li>
+                      </ul>
+        </div>
+            
+    </li>
+       <li class="mnav-l1--item mnav-item">
+      <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro" class="mobile-subnav-l1">Bakery Flour Sales</a></span>
+
+                    <button class="mnav-more"><span class="visually-hidden">Expand Bakery Flour Sales</span></button>
+
+        <div class="mnav-l2--wrapper mnav-wrapper" aria-hidden="true">
+          <div class="mnav-header">
+            <button class="mnav-back"><span class="visually-hidden">Collapse Bakery Flour Sales</span></button>
+            <h3 class="mnav-l2--title">Bakery Flour Sales</h3>
+          </div>
+          <ul class="mnav-l2">
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/products" class="mobile-subnav-l2">Products</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/team" class="mobile-subnav-l2">Our Team</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/distributor" class="mobile-subnav-l2">Distributors</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/formulas" class="mobile-subnav-l2">Formulas</a></span>
+
+                                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference" class="mobile-subnav-l2">Reference</a></span>
+
+                                                  <button class="mnav-more"><span class="visually-hidden">Expand Reference</span></button>
+                  <div class="mnav-l3--wrapper mnav-wrapper" aria-hidden="true">
+                    <div class="mnav-header">
+                      <button class="mnav-back"><span class="visually-hidden">Collapse Reference</span></button>
+                      <h4 class="mnav-l3--title">Reference</h4>
+                    </div>
+                    <ul class="mnav-l3">
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/bakers-percentage" class="mobile-subnav-l3">Baker's Percentage</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/batch-costing" class="mobile-subnav-l3">Batch Costing</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/bromate" class="mobile-subnav-l3">Bromate</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/conversion" class="mobile-subnav-l3">Common conversions</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/dough-temperature" class="mobile-subnav-l3">Dough Temperatures</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/preferment" class="mobile-subnav-l3">Preferments</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/salt" class="mobile-subnav-l3">Salt</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/water" class="mobile-subnav-l3">Water</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/reference/yeast" class="mobile-subnav-l3">Yeast</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/videos/professional-techniques" class="mobile-subnav-l3">Video Tips for Professionals</a></span>
+                        </li>
+                                              <li class="mnav-l3--item mnav-item">
+                          <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/baking-school/calendar" class="mobile-subnav-l3">Professional Classes</a></span>
+                        </li>
+                                          </ul>
+                  </div>
+                                
+              </li>
+                          <li class="mnav-l2--item mnav-item">
+                <span class="mnav-item--wrapper"><a href="https://www.kingarthurbaking.com/pro/contact" class="mobile-subnav-l2">Contact</a></span>
+
+                                                
+              </li>
+                      </ul>
+        </div>
+            
+    </li>
+  </ul>
+
+  </div>
+
+  </div>
+
+        <div class="region region-primary-menu">
+    <div id="block-kafmegamenu" class="block block- block-kaf-megamenu">
+  
+    
+      
+<nav aria-label="Main Menu">
+  <ul class="menu menu-level-0">
+          
+      <li class="menu-item">
+                  <a href="https://shop.kingarthurbaking.com/shop-home/">Shop</a>
+        
+                          
+
+<div class="menu_link_content menu-link-contentmain view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+              </li>
+          
+      <li class="menu-item menu-item--active-trail">
+                  <a href="https://www.kingarthurbaking.com/recipes" class="is-active" data-drupal-link-system-path="node/116">Recipes</a>
+        
+                          
+
+<div class="menu_link_content menu-link-contentmain view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+              </li>
+          
+      <li class="menu-item">
+                  <a href="https://www.kingarthurbaking.com/learn" data-drupal-link-system-path="node/156">Learn</a>
+        
+                          
+
+<div class="menu_link_content menu-link-contentmain view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+              </li>
+          
+      <li class="menu-item">
+                  <a href="https://www.kingarthurbaking.com/about" data-drupal-link-system-path="node/27601">About</a>
+        
+                          
+
+<div class="menu_link_content menu-link-contentmain view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+              </li>
+          
+      <li class="menu-item">
+                  <a href="https://www.kingarthurbaking.com/blog" data-drupal-link-system-path="node/161">Blog</a>
+        
+                          
+
+<div class="menu_link_content menu-link-contentmain view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+              </li>
+      </ul>
+</nav>
+
+  </div>
+
+  </div>
+
+        <div class="menu--utility region region-secondary-menu">
+
+    <div class="search">
+      <i class="search__show" tabindex="0" role="button" aria-label="Select to open search panel" aria-haspopup="dialog"></i>
+    </div>
+
+    <div class="user-nav">
+     <nav role="navigation" aria-labelledby="block-kaf-nextgenweb-secondarynavigation-menu" id="block-kaf-nextgenweb-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-kaf-nextgenweb-secondarynavigation-menu">Secondary navigation</h2>
+  
+
+        
+<ul class="menu menu-level-0">
+  
+  <li class="user__item user__item-account menu-item menu-item--expanded">
+    <a href="https://shop.kingarthurbaking.com/shop/signin">Sign in</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+<ul class="menu menu-level-1">
+  
+  <li class="user__item menu-item">
+    <a href="https://shop.kingarthurbaking.com/AcctDashboard">Dashboard</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item menu-item">
+    <a href="https://shop.kingarthurbaking.com/OrderHistory">Orders</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item menu-item">
+    <a href="https://shop.kingarthurbaking.com/WishListDisplay">Wish List</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item menu-item">
+    <a href="https://www.kingarthurbaking.com/recipebox" data-drupal-link-system-path="recipebox">Recipe Box</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item menu-item">
+    <a href="https://www.kingarthurbaking.com/subscriptions" data-drupal-link-system-path="subscriptions">Email preferences</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item user__item-separator user__item-chevron menu-item">
+    <a href="https://classes.kingarthurbaking.com/Login.aspx">Baking School login</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+  
+  <li class="user__item user__item-signout menu-item">
+    <a href="">Sign out</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-1 menu-type-default">
+        
+  </div>
+      </li>
+</ul>
+
+  </div>
+      </li>
+  
+  <li class="user__item user__item-cart menu-item">
+    <a href="https://shop.kingarthurbaking.com/shop/CartDisplay">View your cart</a>
+
+              
+
+<div class="menu_link_content menu-link-contentsecondary view-mode-default menu-dropdown menu-dropdown-0 menu-type-default">
+        
+  </div>
+      </li>
+</ul>
+
+  </nav>
+
+    </div>
+  </div>
+
+      <button class="menu__trigger" aria-haspopup="true" aria-controls="mobile-nav" aria-expanded="false" id="mnav-trigger"><span class="visually-hidden">Global Navigation Menu</span></button>
+    </div>
+
+          <nav aria-label="Section Navigation Menu" class="header-subnav">
+          <div class="region region-subnav-menu">
+    <nav role="navigation" aria-labelledby="block-subnavrecipes-menu" id="block-subnavrecipes">
+            
+  <h2 class="visually-hidden" id="block-subnavrecipes-menu">Subnav: Recipes</h2>
+  
+
+        
+
+                <ul class="menu-subnav-recipes menu-level-0">
+                                    <li class="subnav-li parent-item">
+                                                    <a aria-haspopup="true" aria-expanded="false" href="">Categories</a>
+                                      
+                          
+                  <ul>
+                                      <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/biscuits-shortcakes">Biscuits &amp; Shortcakes</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/bread">Bread</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/buns-rolls">Buns &amp; Rolls</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/cake">Cake</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/cookies-bars">Cookies &amp; Bars</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/muffins-popovers">Muffins &amp; Popovers</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/pancakes-waffles">Pancakes &amp; Waffles</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/pastry">Pastry</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/pie">Pie</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/scones">Scones</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="">—</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes#categories">See All Categories</a>
+                                      
+                      </li>
+              </ul>
+      
+                      </li>
+                              <li class="subnav-li parent-item">
+                                                    <a aria-haspopup="true" aria-expanded="false" href="https://www.kingarthurbaking.com/recipes/collections">Collections</a>
+                                      
+                          
+                  <ul>
+                                      <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections/new-from-the-test-kitchen">New from the Test Kitchen</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections/best-chocolate-recipes">Best Chocolate Recipes</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections/recipes-to-bake-with-kids">Recipes to Bake With Kids</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections/sourdough-discard-recipes">Sourdough Discard Recipes</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections/recipes-with-5-ingredients-or-fewer">5 Ingredients or Fewer</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="">—</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/collections">View All Recipe Collections</a>
+                                      
+                      </li>
+              </ul>
+      
+                      </li>
+                              <li class="subnav-li parent-item">
+                                                    <a aria-haspopup="true" aria-expanded="false" href="">Resources</a>
+                                      
+                          
+                  <ul>
+                                      <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipebox">Recipe Box</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/bakers-hotline">Bakers Hotline</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/learn/ingredient-weight-chart">Ingredient Weight Chart</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/videos/baking-skills/how-to-measure-flour">How to Measure Flour</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes/resources/recipe-success-guide">Recipe Success Guide</a>
+                                      
+                      </li>
+              </ul>
+      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+      </nav>
+      </header>
+
+    <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+
+  <main class="main" role="main">
+    <a id="main-content" tabindex="-1"></a>
+    
+    
+          <section class="page-content-header">
+          <div class="region region-content-header">
+    <div id="block-nodequickview" class="block block-ctools block-entity-viewnode">
+  
+    
+      
+    <div class="recipe__marquee-image">
+    <div class="hero__image">
+              <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_006.jpg 2x" media="(min-width: 1360px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_003.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_004.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_007.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_005.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_008.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-marquee_003.jpg" alt="Japanese Milk Bread Rolls">
+
+  </picture>
+
+
+
+
+
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__content-inner">
+                  
+<nav class="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+  <ol class="breadcrumb__wrap">
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes">Recipes</a>
+          </li>
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes/bread">Bread</a>
+          </li>
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes/sandwich-bread">Sandwich bread</a>
+          </li>
+    </ol>
+</nav>
+
+        
+        <h1><span>Japanese Milk Bread Rolls</span>
+</h1>
+      </div>
+    </div>
+  </div>
+
+<article role="article" class="node node--type-recipe quickview quickview--recipe quickview--with-marquee">
+  <div class="quickview__content">
+          
+<nav class="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+  <ol class="breadcrumb__wrap">
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes">Recipes</a>
+          </li>
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes/bread">Bread</a>
+          </li>
+      <li class="breadcrumb__item">
+              <a href="https://www.kingarthurbaking.com/recipes/sandwich-bread">Sandwich bread</a>
+          </li>
+    </ol>
+</nav>
+
+    
+    <h1><span>Japanese Milk Bread Rolls</span>
+</h1>
+
+    <div class="quickview__meta">
+      <div class="quickview__reviews reviews">
+                  <a class="reviews__jumplink" href="#review-section">
+                                <div class="reviews__wrapper">
+                                      <span class="reviews__label">444 Reviews</span>
+                                      <span class="rating rating-is-50">4.7 out of 5 stars</span>
+                                    </div>
+                              </a>
+              </div>
+
+              <div class="share js-kaf-share-widget no-shares" role="region" aria-label="Social share">
+  <div class="share__label">Share</div>
+  <div class="flex-line-breaker"></div>
+  <div class="share__count js-kaf-share-count hidden"></div>
+
+  <ul class="share__btn-group">
+    <li><a class="share__btn share__btn--facebook js-kaf-share-button-facebook" href="#">Share on Facebook</a></li>
+    <li><a class="share__btn share__btn--email js-kaf-share-button-email" href="mailto:?subject=Japanese%20Milk%20Bread%20Rolls%20%7C%20King%20Arthur%20Baking&amp;body=Japanese%20Milk%20Bread%20Rolls%20%7C%20King%20Arthur%20Baking%0Ahttps%3A%2F%2Fwww.kingarthurbaking.com%2Frecipes%2Fjapanese-milk-bread-rolls-recipe">Share by Email</a></li>
+    <li><a class="share__btn share__btn--pinterest js-kaf-share-button-pinterest" href="#">Share on Pinterest</a></li>
+    <li><a class="share__btn share__btn--twitter js-kaf-share-button-twitter" href="#">Share on Twitter</a></li>
+  </ul>
+</div>
+
+          </div>
+
+    <div class="quickview__description">
+        <p>Also referred to as Hokkaido milk bread, these rolls are 
+incredibly soft and airy thanks to a simple technique involving a roux 
+"starter," known as tangzhong. The roux is mixed into the final dough, 
+producing wonderfully tender bread each and every time.</p>
+
+    </div>
+
+    <div class="stats stats--recipe with-rule">
+              <div class="stat__item stat__item--prep">
+          <div class="label">Prep</div>
+          <span>30 mins</span>
+        </div>
+      
+              <div class="stat__item stat__item--bake">
+          <div class="label">Bake</div>
+          <span>25 to 30 mins</span>
+        </div>
+      
+              <div class="stat__item stat__item--total">
+          <div class="label">Total</div>
+          <span>3 hrs 57 mins</span>
+        </div>
+          </div>
+
+    <div class="stats stats--recipe">
+              <div class="stat__item stat__item--yield">
+          <div class="label">Yield</div>
+          <span>8 to 10 rolls, depending on size</span>
+        </div>
+      
+              <div class="stat__item stat__item--recipe-box">
+          <a href="https://www.kingarthurbaking.com/recipebox" class="btn btn--save js-kaf-recipe-box-add" data-recipe-id="16161" data-recipe-uuid="901db06d-7abf-4b34-9611-c199820ac532">Save Recipe</a>
+        </div>
+      
+      <div class="stat__item stat__item--print">
+        <button id="print-recipe-button" class="btn btn--print" data-node="16161">
+          Print
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="quickview__media">
+    <div class="quickview__media-main">
+                            <div id="mainImage-0">
+                <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_003.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_004.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg" alt="Japanese Milk Bread Rolls - select to zoom">
+
+  </picture>
+
+
+
+
+        </div>
+                                        <div id="mainImage-1" style="display:none;">
+                <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_003.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_004.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317.jpg" alt="Japanese Milk Bread Rolls - select to zoom">
+
+  </picture>
+
+
+
+
+        </div>
+          </div>
+          <div class="quickview__media-thumbnails" role="region" aria-label="Recipe image thumbnails - select an image to enlarge">
+                                                  <div class="quickview-thumbnail" id="thumbnail-0" tabindex="0" role="link" aria-current="true">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_003.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_004.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg" alt="Japanese Milk Bread Rolls - select to zoom">
+
+  </picture>
+
+
+
+
+          </div>
+                                                  <div class="quickview-thumbnail" id="thumbnail-1" tabindex="0" role="link" aria-current="false">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_003.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_004.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/japanese-milk-bread-rolls-4_0317.jpg" alt="Japanese Milk Bread Rolls - select to zoom">
+
+  </picture>
+
+
+
+
+          </div>
+              </div>
+      </div>
+</article>
+
+  </div>
+
+  </div>
+
+      </section>
+    
+
+    <section class="page-content">
+        <div class="region region-content">
+    <div role="article" class="node node--type-recipe node--promoted node--view-mode-full">
+  
+  
+  
+
+  <div class="node__content">
+    <section class="recipe recipe--detail">
+      <aside class="recipe__ingredients">
+        <h4>Ingredients</h4>
+        
+<div class="ingredients-list">
+      <div class="ingredient-section">
+      <p>Tangzhong (starter)</p>
+  
+  <ul class="list--bullets">
+      <li>3 tablespoons (43g) water</li>
+      <li>3 tablespoons (43g) whole milk</li>
+      <li>2 tablespoons (14g) <a href="https://shop.kingarthurbaking.com/items/king-arthur-unbleached-bread-flour-8-lb" target="_blank" data-name="King Arthur Unbleached Bread Flour - 8 lb." data-sku="211210" data-price="$5.33">King Arthur Unbleached Bread Flour</a></li>
+  </ul>
+
+
+  </div>
+
+      <div class="ingredient-section">
+      <p>Dough</p>
+  
+  <ul class="list--bullets">
+      <li>2 1/2 cups (298g) <a href="https://shop.kingarthurbaking.com/items/king-arthur-unbleached-bread-flour-8-lb" target="_blank" data-name="King Arthur Unbleached Bread Flour - 8 lb." data-sku="211210" data-price="$5.33">King Arthur Unbleached Bread Flour</a></li>
+      <li>2 tablespoons (14g) <a href="https://shop.kingarthurbaking.com/items/bakers-special-dry-milk-16-oz" target="_blank" data-name="Baker's Special Dry Milk - 16 oz." data-sku="100071" data-price="$9.95">Baker's Special Dry Milk</a> or nonfat dry milk</li>
+      <li>1/4 cup (50g) sugar</li>
+      <li>1 teaspoon (6g) salt</li>
+      <li>1 tablespoon <a href="https://shop.kingarthurbaking.com/items/saf-red-instant-yeast-16-oz" target="_blank" data-name="SAF Red Instant Yeast - 16 oz." data-sku="201264" data-price="$5.95">instant yeast</a></li>
+      <li>1/2 cup (113g) whole milk</li>
+      <li>1 large egg</li>
+      <li>4 tablespoons (57g) unsalted butter, melted</li>
+  </ul>
+
+
+  </div>
+
+  </div>
+
+
+                  <a href="https://www.kingarthurbaking.com/nutritional-info/16161" rel="nofollow" aria-haspopup="dialog" class="btn btn--secondary use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:&quot;90%&quot;, &quot;dialogClass&quot;:&quot;kaf-modal&quot;}">Nutrition Information</a>
+              </aside>
+
+      <article class="recipe__instructions">
+                  <a class="recipe__media-toggle" id="recipe__media-toggle" href="" aria-label="Hide recipe step images and videos">Hide images</a>
+                <h4>Instructions</h4>
+        <div class="field field--recipe-steps">
+  <ol class="list--numbers">
+          <li class="field__item">
+
+        <p>Weigh your flour; or measure it by gently spooning it into a cup, then sweeping off any excess.</p>
+
+
+        
+      </li>
+          <li class="field__item">
+
+        <p><strong>To make the tangzhong:</strong> Combine all of the ingredients in a small saucepan, and whisk until no lumps remain.</p>
+
+<div data-embed-button="media" data-entity-embed-display="view_mode:media.full" data-entity-type="media" data-entity-uuid="4eb68b6d-1bb4-479d-a66a-47bf2f3be1cc" data-langcode="en" class="embedded-entity">    <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/step-2_0.jpg" alt="Perfectly Pillowy Cinnamon Rolls – Step 2" loading="lazy" width="512" height="342"></div>
+
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Place the saucepan over low heat, and cook the mixture, 
+whisking constantly, until thick and the whisk leaves lines on the 
+bottom of the pan, about 3 to 5 minutes.</p>
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Transfer the tangzhong to a small mixing bowl or measuring cup and let it cool to room temperature.</p>
+
+        
+      </li>
+          <li class="field__item">
+
+        <p><strong>To make the dough: </strong>Combine the tangzhong 
+with the remaining dough ingredients, then mix and knead — by hand, 
+mixer, or bread machine — until a smooth, elastic dough forms.</p>
+
+<div data-embed-button="media" data-entity-embed-display="view_mode:media.full" data-entity-type="media" data-entity-uuid="ec97a1b1-608e-4236-adce-8625e534fc35" data-langcode="en" class="embedded-entity">    <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/step-5.gif" alt="Perfectly Pillowy Cinnamon Rolls – Step 5" loading="lazy" width="512" height="342"></div>
+
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Shape the dough into a ball, and let it rest in a lightly 
+greased covered bowl for 60 to 90 minutes, until puffy but not 
+necessarily doubled in bulk.</p>
+
+<div data-embed-button="media" data-entity-embed-display="view_mode:media.full" data-entity-type="media" data-entity-uuid="15d1c522-12da-4131-87cd-b27d02445830" data-langcode="en" class="embedded-entity">    <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/step-7.gif" alt="Perfectly Pillowy Cinnamon Rolls – Step 7" loading="lazy" width="512" height="342"></div>
+
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Gently deflate the dough, divide it into 8 equal pieces (for 
+large rolls) or 10 equal pieces (for medium-sized rolls), and shape each
+ piece into a ball.</p>
+
+<div data-embed-button="media" data-entity-embed-display="view_mode:media.full" data-entity-type="media" data-entity-uuid="bfd1f81b-5735-47c7-9aec-8daea0523985" data-langcode="en" class="embedded-entity">    <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/step-10_0.gif" alt="Stuffed Bagel Buns – Step 7" loading="lazy" width="512" height="342"></div>
+
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Place the rolls into a lightly greased&nbsp;<a href="https://shop.kingarthurflour.com/items/king-arthur-round-cake-pan-8">8"</a> or <a href="https://shop.kingarthurflour.com/items/king-arthur-round-cake-pan-9">9" round cake pan</a>. Cover the pan, and let the rolls rest for 40 to 50 minutes, until puffy.&nbsp;&nbsp;</p>
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Preheat the oven to 350°F. Brush the rolls with milk or egg 
+wash (1 large egg beaten with 1 tablespoon cold water), and bake for 25 
+to 30 minutes, until golden brown on top; a digital thermometer inserted
+ into the center of the middle roll should read at least 190°F.</p>
+
+        
+      </li>
+          <li class="field__item">
+
+        <p>Remove the rolls from the oven. Allow them to cool in the pan for 10 minutes, then transfer them to a rack to cool completely.</p>
+
+        
+      </li>
+      </ol>
+</div>
+
+
+                  <div class="recipe__tips">
+            <h4>Tips from our Bakers</h4>
+            <ul class="list--star">
+      <li><div class="eck-entity">
+      <p>With origins in Japan's yukone (or yudane), tangzhong is a yeast bread technique&nbsp;popularized across Asia<i data-stringify-type="italic">&nbsp;</i>by
+ Taiwanese&nbsp;cookbook author Yvonne Chen. Tangzhong involves cooking 
+some of a bread recipe’s flour in liquid prior to adding it to the 
+remaining dough ingredients. Bringing the temperature of the flour and 
+liquid to 65°C (149°F) pre-gelatinizes the flour’s starches, which makes
+ them more able to retain liquid — thus enhancing the resulting bread's 
+softness and shelf life.</p>
+
+
+</div>
+</li>
+      <li><div class="eck-entity">
+      <p>To make a loaf: After the dough's initial rise, divide it into 
+four equal pieces. Flatten each piece into a rectangle, then fold the 
+short ends in towards one another like a letter. Flatten the folded 
+pieces into rectangles again and, starting with a short end, roll them 
+each into a log. Place the logs in a row of four — seam side down and 
+side by side — in a lightly greased 9" x 5" loaf pan. Cover the loaf and
+ allow it to rest/rise for 40 to 50 minutes, until puffy. Brush the loaf
+ with milk or egg wash and bake at 350°F for about 30 minutes, until 
+golden brown on top and a digital thermometer inserted into the center 
+of the loaf reads at least 190°F. Remove the loaf from the oven, and 
+cool it on a rack.</p>
+
+</div>
+</li>
+  </ul>
+
+          </div>
+        
+                  <div class="share js-kaf-share-widget no-shares" role="region" aria-label="Social share">
+  <div class="share__label">Share</div>
+  <div class="flex-line-breaker"></div>
+  <div class="share__count js-kaf-share-count hidden"></div>
+
+  <ul class="share__btn-group">
+    <li><a class="share__btn share__btn--facebook js-kaf-share-button-facebook" href="#">Share on Facebook</a></li>
+    <li><a class="share__btn share__btn--email js-kaf-share-button-email" href="mailto:?subject=Japanese%20Milk%20Bread%20Rolls%20%7C%20King%20Arthur%20Baking&amp;body=Japanese%20Milk%20Bread%20Rolls%20%7C%20King%20Arthur%20Baking%0Ahttps%3A%2F%2Fwww.kingarthurbaking.com%2Frecipes%2Fjapanese-milk-bread-rolls-recipe">Share by Email</a></li>
+    <li><a class="share__btn share__btn--pinterest js-kaf-share-button-pinterest" href="#">Share on Pinterest</a></li>
+    <li><a class="share__btn share__btn--twitter js-kaf-share-button-twitter" href="#">Share on Twitter</a></li>
+  </ul>
+</div>
+
+              </article>
+
+      <div class="recipe-bakers-hotline">
+  <div class="recipe-bakers-hotline__content">
+    <h4>Baker’s Resources</h4>
+    <ul class="list--links">
+      <li><a href="https://www.kingarthurbaking.com/guides/recipe-success-guide">Recipe success guide</a></li>
+      <li><a href="https://www.kingarthurbaking.com/learn/resources/baking-tips-techniques">Tips &amp; techniques</a></li>
+      <li><a href="https://www.kingarthurbaking.com/learn/resources/high-altitude-baking">High-altitude baking</a></li>
+      <li><a href="https://www.kingarthurbaking.com/learn/resources/yeast">Baker’s yeast</a></li>
+      <li><a href="https://www.kingarthurbaking.com/learn/ingredient-weight-chart">Ingredient weight chart</a></li>
+      <li><a href="https://www.kingarthurbaking.com/learn/resources/tools-and-pans">Tools &amp; pans</a></li>
+      <li><a href="https://www.kingarthurbaking.com/videos/baking-skills/how-to-measure-flour">How to measure flour</a></li>
+      <li><a href="https://www.kingarthurbaking.com/about/products/docs/flour-safety">Safe handling instructions</a></li>
+    </ul>
+  </div>
+
+  <aside class="recipe-bakers-hotline__aside">
+    <div class="cta cta--card-small">
+      <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/bakers-hotline.png" alt="Baker’s Hotline">
+      <div class="cta__content">
+        <a class="btn btn--secondary" href="https://www.kingarthurbaking.com/launchchat">Chat with a baker</a>
+      </div>
+    </div>
+  </aside>
+</div>
+    </section>
+
+  </div>
+</div>
+
+  </div>
+
+    </section>
+
+    
+    
+            <div class="region region-content-footer">
+    <div id="block-kafrecipereviews" class="block block-kaf-recipe block-kaf-recipe-reviews">
+  
+    
+      <div class="yotpo yotpo-main-widget" id="review-section" data-product-id="5957" data-name="Japanese Milk Bread Rolls" data-url="https://www.kingarthurbaking.com/recipes/japanese-milk-bread-rolls-recipe" data-description="Also referred to as Hokkaido milk bread, these rolls are incredibly soft and airy thanks to a simple technique involving a roux &quot;starter,&quot; known as tangzhong. The roux is mixed into the final dough, producing wonderfully tender bread each and every time.
+"></div>
+
+  </div>
+
+<div id="block-recipe-newsletter-signup" class="block block-webform block-webform-block">
+  <div class="newsletter-wrapper">
+    
+    
+
+          <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_003.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_004.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large_002.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/5957-3-large.jpg" alt="Japanese Milk Bread Rolls - select to zoom">
+
+  </picture>
+
+
+
+
+
+    <div class="newsletter-form-area" tabindex="-1">
+      <h3 class="heading" aria-live="polite">For more recipes like this subscribe to our newsletter</h3>
+
+      <form class="recipe-newsletter-signup" id="recipe-newsletter-form">
+        <div class="form-item-email">
+          <input aria-label="Email address" class="custom-form-field form-email" id="recipe-newsletter-input" placeholder="Email address" type="email">
+        </div>
+        <div class="form-actions webform-actions js-form-wrapper form-wrapper">
+          <input class="webform-button--submit button" id="recipe-email-submit" type="submit" value="submit">
+        </div>
+      </form>
+      <small style="display:block; margin-top: 5px;">View our <a href="https://www.kingarthurbaking.com/policies/privacy-policy">privacy policy</a></small></div>
+    </div>
+  </div>
+</div>
+<div id="block-kafrecommendedrecipes" class="block block-kaf-recipe block-kaf-recommended-recipes">
+  
+    
+      <div class="related related--recipes">
+  <div class="eyebrow">Recipes</div>
+  <h3>Recommended Recipes</h3>
+  <div class="related__nodes">
+    
+<div role="article" class="recipe recipe--card">
+  <a href="https://www.kingarthurbaking.com/recipes/whole-grain-dinner-rolls-recipe" rel="bookmark">
+    
+    
+
+    <div class="recipe__media">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_004.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_002.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_005.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_006.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_003.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/whole-grain-dinner-rolls_002.jpg" alt="Whole Grain Dinner Rolls">
+
+  </picture>
+
+
+
+
+    </div>
+
+    <div class="recipe__content">
+              <span class="eyebrow">Sandwich buns &amp; dinner rolls</span>
+      
+              <h5>
+          Whole Grain Dinner Rolls
+        </h5>
+          </div>
+  </a>
+</div>
+
+
+<div role="article" class="recipe recipe--card">
+  <a href="https://www.kingarthurbaking.com/recipes/italian-easter-cheese-bread-crescia-al-formaggio-recipe" rel="bookmark">
+    
+    
+
+    <div class="recipe__media">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_004.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_002.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_006.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_005.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_003.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/italian-easter-cheese-bread_002.jpg" alt="Italian Easter Cheese Bread (Crescia al Formaggio)">
+
+  </picture>
+
+
+
+
+    </div>
+
+    <div class="recipe__content">
+              <span class="eyebrow">Sandwich bread</span>
+      
+              <h5>
+          Italian Easter Cheese Bread (Crescia al Formaggio)
+        </h5>
+          </div>
+  </a>
+</div>
+
+
+<div role="article" class="recipe recipe--card">
+  <a href="https://www.kingarthurbaking.com/recipes/everyday-whole-grain-bread-recipe" rel="bookmark">
+    
+    
+
+    <div class="recipe__media">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_006.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_002.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_004.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_005.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_003.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/8779-3-large_002.jpg" alt="Everyday Whole Grain Bread">
+
+  </picture>
+
+
+
+
+    </div>
+
+    <div class="recipe__content">
+              <span class="eyebrow">Sandwich bread</span>
+      
+              <h5>
+          Everyday Whole Grain Bread
+        </h5>
+          </div>
+  </a>
+</div>
+
+
+<div role="article" class="recipe recipe--card">
+  <a href="https://www.kingarthurbaking.com/recipes/golden-buttermilk-loaf-recipe" rel="bookmark">
+    
+    
+
+    <div class="recipe__media">
+                  <picture>
+                  <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_005.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_002.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_004.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+              <source srcset="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_006.jpg 1x, Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_003.jpg 2x" type="image/jpeg">
+                  <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/golden-buttermilk-loaf_0421_002.jpg" alt="Golden Buttermilk Loaf">
+
+  </picture>
+
+
+
+
+    </div>
+
+    <div class="recipe__content">
+              <span class="eyebrow">Sandwich bread</span>
+      
+              <h5>
+          Golden Buttermilk Loaf
+        </h5>
+          </div>
+  </a>
+</div>
+
+
+  </div>
+</div>
+
+  </div>
+<div id="block-kafreciperelatedproducts" class="block block-kaf-recipe block-kaf-related-products">
+  
+    
+      <div class="related related--products">
+  <div class="eyebrow">Shop</div>
+  <h3>Related Products</h3>
+  <div class="related__nodes">
+    
+<div role="article" class="product product--card">
+  
+  
+
+      <a href="https://shop.kingarthurbaking.com/items/bakers-special-dry-milk-16-oz">
+  
+      <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/1188_01_04_2021__09_08_43_700.jpg" alt="" width="700" height="700">
+  
+  <div class="product__content">
+    <h5 data-sku="100071" data-price="$9.95">
+      <span>Baker's Special Dry Milk - 16 oz.</span>
+
+    </h5>
+
+    <div class="product__reviews">
+              <span class="rating rating-is-50">5 out of 5 stars</span>
+                    <span class="reviews__label">647 Reviews</span>
+          </div>
+  </div>
+
+      </a>
+  
+</div>
+
+<div role="article" class="product product--card">
+  
+  
+
+      <a href="https://shop.kingarthurbaking.com/items/saf-red-instant-yeast-16-oz">
+  
+      <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/1458_05_23_2016__13_18_48_700.jpg" alt="" width="700" height="700">
+  
+  <div class="product__content">
+    <h5 data-sku="201264" data-price="$5.95">
+      <span>SAF Red Instant Yeast - 16 oz.</span>
+
+    </h5>
+
+    <div class="product__reviews">
+              <span class="rating rating-is-50">4.9 out of 5 stars</span>
+                    <span class="reviews__label">2026 Reviews</span>
+          </div>
+  </div>
+
+      </a>
+  
+</div>
+
+<div role="article" class="product product--card">
+  
+  
+
+      <a href="https://shop.kingarthurbaking.com/items/3in-flat-pastry-brush">
+  
+      <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/11224_11_19_2019__10_10_41_700.jpg" alt="" width="700" height="700">
+  
+  <div class="product__content">
+    <h5 data-sku="201755" data-price="$44.95">
+      <span>3in Flat Pastry Brush</span>
+
+    </h5>
+
+    <div class="product__reviews">
+              <span class="rating rating-is-45">4.5 out of 5 stars</span>
+                    <span class="reviews__label">10 Reviews</span>
+          </div>
+  </div>
+
+      </a>
+  
+</div>
+
+<div role="article" class="product product--card">
+  
+  
+
+      <a href="https://shop.kingarthurbaking.com/items/king-arthur-unbleached-bread-flour-8-lb">
+  
+      <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/211210_09_09_2020__14_17_56_700.jpg" alt="" width="700" height="700">
+  
+  <div class="product__content">
+    <h5 data-sku="211210" data-price="$5.33">
+      <span>King Arthur Unbleached Bread Flour - 8 lb.</span>
+
+    </h5>
+
+    <div class="product__reviews">
+              <span class="rating rating-is-50">5 out of 5 stars</span>
+                    <span class="reviews__label">1938 Reviews</span>
+          </div>
+  </div>
+
+      </a>
+  
+</div>
+
+  </div>
+</div>
+
+  </div>
+
+  </main></div>
+
+      
+
+      <div class="page-below-connect">
+        <div class="region region-below-connect">
+    <div id="block-connectwithus" class="block block-block-content block-block-content1b703610-b351-4568-bcc6-a91a133f7a95">
+  
+    
+        <h2>Connect with us</h2>
+
+  </div>
+<div id="block-receiverecipesspecialoffers" class="block block-block-content block-block-contentc53da24a-b22e-4ce3-acdd-9e13a0c06f0e">
+  
+      <h3 aria-live="polite">Receive Recipes &amp; Special Offers</h3>
+    
+        <form id="footer-newsletter-form">
+<div class="form-item-email"><input aria-label="Email address" class="custom-form-field form-email" id="footer-newsletter-input" placeholder="Email address" type="email"></div>
+
+<div class="form-actions webform-actions js-form-wrapper form-wrapper"><input class="webform-button--submit button" id="footer-email-submit" type="submit" value="submit"></div>
+</form>
+
+<p class="footer-newsletter-text"><small style="display:block;">View our <a href="https://www.kingarthurbaking.com/policies/privacy-policy" style="text-decoration:underline;">privacy policy</a></small></p>
+
+
+  </div>
+<div id="block-oursocialcommunities" class="block block-block-content block-block-content411ae0cb-f0be-450c-b0b1-d6a9848d6093">
+  
+      <h3 aria-live="polite">Our Social Communities</h3>
+    
+        <p><a class="icon-facebook" href="https://www.facebook.com/kingarthurbaking/"><span class="visually-hidden">Facebook</span></a> <a class="icon-instagram" href="https://www.instagram.com/kingarthurbaking/"><span class="visually-hidden">Instagram</span></a> <a class="icon-pinterest" href="https://www.pinterest.com/kingarthurbaking/"><span class="visually-hidden">Pinterest</span></a> <a class="icon-twitter" href="https://twitter.com/kingarthurflour/"><span class="visually-hidden">Twitter</span></a> <a class="icon-youtube" href="https://www.youtube.com/KingArthurBakingCompany"><span class="visually-hidden">YouTube</span></a> <a class="icon-linkedin" href="https://www.linkedin.com/company/king-arthur-baking-company/"><span class="visually-hidden">LinkedIn</span></a></p>
+
+
+  </div>
+<div id="block-getintouch" class="block block-block-content block-block-contentf5d7c1ec-3561-40ba-b96c-6457ceecb13f">
+  
+      <h3 aria-live="polite">Get in Touch</h3>
+    
+        <p><a class="button contact-button" href="https://www.kingarthurbaking.com/launchchat">Chat | Email</a></p>
+
+
+  </div>
+
+  </div>
+
+    </div>
+  
+      <div class="page-below-values">
+        <div class="region region-below-values">
+    <div id="block-certifiedbcorporation" class="block block-block-content block-block-content900f3cf8-936b-4320-a12a-9f0aa9325299">
+  
+  
+                <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/b-corp_6.svg" alt="Certified B Corporation Logo" loading="lazy" width="" height="">
+
+
+
+      </div>
+<div id="block-100employeeowned" class="block block-block-content block-block-content0b74f5eb-9c02-4f1a-af3c-f3fbe64c2200">
+  
+  
+                <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/employee-owned_6.svg" alt="100% Employee-owned logo" loading="lazy" width="" height="">
+
+
+
+      </div>
+<div id="block-1fortheplanet" class="block block-block-content block-block-content8a5711d0-5544-4e42-bcdb-c59131dfa9d7">
+  
+  
+                <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/for-the-planet_6.svg" alt="1% For The Planet Logo" loading="lazy" width="" height="">
+
+
+
+      </div>
+<div id="block-100committedtoquality" class="block block-block-content block-block-content08516c39-cfe6-4e33-b48e-379b68c53063">
+  
+  
+                <img src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/quality_6.svg" alt="100% Committed to Quality Logo" loading="lazy" width="" height="">
+
+
+
+      </div>
+
+  </div>
+
+    </div>
+  
+  <footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+          <div class="footer__first footer-menu">
+          <div class="region region-footer-first">
+    <nav role="navigation" aria-labelledby="block-kaf-nextgenweb-footerthebakerscatalogue-menu" id="block-kaf-nextgenweb-footerthebakerscatalogue">
+      
+  <h2 id="block-kaf-nextgenweb-footerthebakerscatalogue-menu">Shop Online</h2>
+  
+
+        
+
+                <ul class="menu-footer-bakers-catalog menu-level-0">
+                                    <li>
+                                                    <a href="https://shop.kingarthurbaking.com/customerservice/promotions.html">Current Promotions</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://shop.kingarthurbaking.com/customerservice/shipping.html">Customer Service</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://shop.kingarthurbaking.com/customerservice/returns.html">Returns &amp; Refunds</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://shop.kingarthurbaking.com/landing.jsp?go=DefaultCatSignup&amp;ref=pub1">Request a Catalog </a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://shop.kingarthurbaking.com/quickshop">Quick Shop</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://shop.kingarthurbaking.com/rewards/">Baker's Rewards Plus</a>
+                                      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+      </div>
+    
+          <div class="footer__second footer-menu">
+          <div class="region region-footer-second">
+    <nav role="navigation" aria-labelledby="block-kaf-nextgenweb-footerforhomebakers-menu" id="block-kaf-nextgenweb-footerforhomebakers">
+      
+  <h2 id="block-kaf-nextgenweb-footerforhomebakers-menu">For Home Bakers</h2>
+  
+
+        
+
+                <ul class="menu-footer-home-bakers menu-level-0">
+                                    <li>
+                                                    <a href="https://www.kingarthurbaking.com/recipes">Recipes</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/learn/guides">Baking Guides</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/bakers-hotline">Baker's Hotline</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/about/products/docs/flour-safety">Say No to Raw Dough</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/baking-school/calendar?cat=3">Classes for Home Bakers </a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/baking-contests">Baking Contests</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://kingarthurbaking.com/cookbooks">Our Cookbooks</a>
+                                      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+      </div>
+    
+          <div class="footer__third footer-menu">
+          <div class="region region-footer-third">
+    <nav role="navigation" aria-labelledby="block-kaf-nextgenweb-footerforprofessionalbakers-menu" id="block-kaf-nextgenweb-footerforprofessionalbakers">
+      
+  <h2 id="block-kaf-nextgenweb-footerforprofessionalbakers-menu">For Professional Bakers</h2>
+  
+
+        
+
+                <ul class="menu-footer-professional-bakers menu-level-0">
+                                    <li>
+                                                    <a href="https://www.kingarthurbaking.com/pro">Bakery &amp; Food Service Sales</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/pro/products">Commercial Product Lines</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/pro/distributor">Wholesale Distributors</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/baking-school/calendar?cat=8">Classes &amp; Training</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/pro/formulas">Bakery Formulas</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/pro/reference">Resources &amp; Reference </a>
+                                      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+      </div>
+    
+          <div class="footer__fourth footer-menu">
+          <div class="region region-footer-fourth">
+    <nav role="navigation" aria-labelledby="block-kaf-nextgenweb-footerkingarthurflour-menu" id="block-kaf-nextgenweb-footerkingarthurflour">
+      
+  <h2 id="block-kaf-nextgenweb-footerkingarthurflour-menu">Our Company</h2>
+  
+
+        
+
+                <ul class="menu-footer-king-arthur-flour menu-level-0">
+                                    <li>
+                                                    <a href="https://www.kingarthurbaking.com/about/our-products">Our Product Lines</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/wheretobuy">Find Products Near You</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/visit">Visit Us</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/jobs">Jobs &amp; Careers</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/about/diversity-equity-inclusion">Diversity, Equity, and Inclusion</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/contact-us">Contact Us</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/newsroom">Newsroom</a>
+                                      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+      </div>
+      </div>
+      <div class="footer__legal">
+      
+<div class="region region-footer">
+  <p class="copyright">Copyright ©
+    2021
+    King Arthur Baking Company, Inc. All rights reserved.  </p>
+
+      <nav role="navigation" aria-labelledby="block-footerlegal-menu" id="block-footerlegal">
+            
+  <h2 class="visually-hidden" id="block-footerlegal-menu">Footer - Legal</h2>
+  
+
+        
+
+                <ul class="menu-footer-legal menu-level-0">
+                                    <li>
+                                                    <a href="https://www.kingarthurbaking.com/about/products/docs/supply-chain-disclosure">Supply Chain Disclosure</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/policies/accessibility">Accessibility</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/policies/privacy-policy">Privacy Policy</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/policies/terms-of-use">Terms of Use</a>
+                                      
+                      </li>
+                              <li>
+                                                    <a href="https://www.kingarthurbaking.com/policies/privacy/california#do-not-sell">Do Not Sell My Information</a>
+                                      
+                      </li>
+              </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+
+    </div>
+  </footer>
+
+      
+<div class="region region-search-overlay search__overlay" aria-modal="true" role="dialog">
+  <div class="search__overlay--inner-container">
+    <div class="search__bar" role="search" aria-label="Site Search">
+
+      <div class="select--container">
+        <select class="search__bar--select" tabindex="-1" name="search-overlay-select" aria-label="Search overlay select">
+          <option value="rebuild_all_index" disabled="disabled" hidden="">All</option>
+          <option value="rebuild_all_index">All</option>
+          <option value="recipe_index" selected="selected">Recipes</option>
+          <option value="Product">Products</option>
+          <option value="blog_index">Blog</option>
+          <option value="general_content_index">Other</option>
+        </select>
+      <div class="select-selected" tabindex="0" id="dropdown__selected" aria-label="Type of pages to search for" aria-owns="search__overlay--listbox-index-types">Recipes</div><div aria-expanded="false" class="select-items select-hide" role="listbox" id="search__overlay--listbox-index-types"><div data="rebuild_all_index" role="option" class="select-item" tabindex="0" id="option-1">All</div><div data="recipe_index" role="option" class="select-item" tabindex="0" id="option-2">Recipes</div><div data="Product" role="option" class="select-item" tabindex="0" id="option-3">Products</div><div data="blog_index" role="option" class="select-item" tabindex="0" id="option-4">Blog</div><div data="general_content_index" role="option" class="select-item" tabindex="0" id="option-5">Other</div></div></div>
+
+      <div class="mobile-search--container">
+        <!-- A live region to announce number of suggestions presented-->
+        <div id="search__overlay--announce" class="visually-hidden" aria-live="assertive"></div>
+        <input id="search__overlay--input" class="search-input" name="search-bar" aria-label="Search" placeholder="" autocomplete="off" aria-owns="search__overlay--results" aria-autocomplete="both" role="combobox">
+
+        <div class="submit--container">
+          <button class="search-submit" name="search-submit" aria-label="Submit">
+            <img class="search-image" style="min-width: 17px;" alt="" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/search--white.svg">
+            <span class="visually-hidden">Submit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-autocomplete" style="display: none;">
+      <ul role="listbox" tabindex="-1" id="search__overlay--results" aria-expanded="false"></ul>
+    </div>
+
+    <div class="search_promotion" style="display: block;"><div id="block-searchformpromotionalarea" class="block block-block-content block-block-contentbadedd9e-df51-461a-b7b2-c133f22e0e3c">
+  
+    
+        <div class="wysiwyg__grid grid-has-3">
+<div class="wysiwyg__grid-item"><span class="eyebrow">Popular in recipes</span>
+<ul><li><a href="https://www.kingarthurbaking.com/recipes/crispy-cheesy-pan-pizza-recipe">Crispy Cheesy Pan Pizza</a></li>
+	<li><a href="https://www.kingarthurbaking.com/recipes/classic-birthday-cake-recipe">Classic Birthday Cake</a></li>
+	<li><a href="https://www.kingarthurbaking.com/recipes/sourdough-starter-recipe">Sourdough Starter</a></li>
+</ul></div>
+
+<div class="wysiwyg__grid-item"><span class="eyebrow">Popular in products</span>
+
+<ul><li><a href="https://shop.kingarthurbaking.com/items/king-arthur-unbleached-all-purpose-flour-8-lb">Unbleached All-Purpose Flour</a></li>
+	<li><a href="https://shop.kingarthurbaking.com/items/gluten-free-measure-for-measure-flour-3-lb">Gluten-Free Measure for Measure</a></li>
+	<li><a href="https://shop.kingarthurbaking.com/items/baking-parchment-paper-set-of-100-half-sheets">Baking Parchment Paper</a></li>
+</ul></div>
+
+<div class="wysiwyg__grid-item"><span class="eyebrow">Popular in blog</span>
+
+<ul><li><a href="https://www.kingarthurbaking.com/blog/2017/02/21/bread-baking-dutch-oven">Bread baking in a Dutch oven</a></li>
+	<li><a href="https://www.kingarthurbaking.com/blog/2020/06/10/10-tips-for-new-sourdough-bakers">10 tips for new sourdough bakers</a></li>
+	<li><a href="https://www.kingarthurbaking.com/blog/2018/10/31/make-and-freeze-pie-crust">Make and freeze pie crust</a></li>
+</ul></div>
+</div>
+
+
+  </div>
+</div>
+
+    <button class="search__hide" aria-label="Close search panel">
+      <span class="search__hide-text">close</span>
+    </button>
+  </div>
+</div>
+
+  
+</div>
+
+  
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/16161","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"ckeditor_accordion\/accordion_style,cleantalk\/apbct-public,core\/picturefill,entity_embed\/caption,eu_cookie_compliance\/eu_cookie_compliance_bare,kaf_ga_tracking\/kaf_ga_tracking,kaf_helpscout\/helpscout,kaf_nextgenweb\/global-scripts,kaf_nextgenweb\/global-styling,kaf_nextgenweb\/status-message-ui,kaf_promo_bar\/kaf_promo_bar,kaf_recipe_box\/recipebox,kaf_share\/kaf_share,kaf_shopinfo\/shopinfo,system\/base","theme":"kaf_nextgenweb","theme_token":null},"ajaxTrustedUrl":[],"kaf_helpscout":{"beacon_id":"fd820c57-521c-4c0a-9eff-0ba927533437"},"kafShopinfo":{"apiBaseUrl":"https:\/\/shop.kingarthurbaking.com\/api\/userinfo","loginUrl":"https:\/\/shop.kingarthurbaking.com\/AcceptLogin"},"ckeditorAccordion":{"accordionStyle":{"collapseAll":1,"keepRowsOpen":null}},"kaf_recipe_box":{"api_base_url":"https:\/\/shop.kingarthurbaking.com\/api\/recipebox","shop_signin_url":"https:\/\/shop.kingarthurbaking.com\/signin","native_enabled":false},"kaf_promo_bar":{"api_base_url":"https:\/\/shop.kingarthurbaking.com\/CurrentPromo"},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":true,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class =\u0022alert alert--cookie sticky\u0022\u003E\n  \u003Cspan\u003E\n    \u003Cp\u003EThis site uses cookies to provide you with the best experience possible.\u003C\/p\u003E\n\n  \u003C\/span\u003E\n      \u003Ca class=\u0022find-more-button alert__learnmore\u0022\u003ERead our Privacy Policy\u003C\/a\u003E\n    \u003Ca class=\u0022agree-button alert__close\u0022\u003E\u003Ci\u003EClose\u003C\/i\u003E\u003C\/a\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class =\u0022alert alert--cookie sticky\u0022\u003E\n  \u003Cspan\u003E\n    \n  \u003C\/span\u003E\n      \u003Ca class=\u0022find-more-button alert__learnmore\u0022\u003ERead our Privacy Policy\u003C\/a\u003E\n    \u003Ca class=\u0022agree-button alert__close\u0022\u003E\u003Ci\u003EClose\u003C\/i\u003E\u003C\/a\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":true,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/policies\/privacy.html","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":null,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"default","automatic_cookies_removal":true,"allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":null,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":null,"containing_element":"body","settings_tab_enabled":false},"kaf_search":{"algolia_app_id":"HWPWEWOTF5","algolia_api_key":"f76e4ac912eee478c11cad084afe4ecb"},"user":{"uid":0,"permissionsHash":"c50293c644408a7d52ffd7353eafe0b32da2035809d230aaf4ae7d894d3a6a42"}}</script>
+<script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/js_QQ6vykPvXQ3afUIO4oyjr0z_TGFvhcWl9nxHTN9wlds.js"></script>
+<script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/polyfill.js"></script>
+<script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/js_7QBL8FbF_3nH7l3o9D_QhpI2TqkGLsptoB9t1XjMDw8.js"></script>
+<script src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/eu_cookie_compliance.js" defer="defer"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"6b8b93db2d","applicationID":"401100790","transactionName":"YABQZUUAChBXU0xYDVlKZ0NeTg0NUlVAHxJfFQ==","queueTime":0,"applicationTime":152,"atts":"TEdTEw0aGR4=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+<button type="button" class="helpscout-beacon-btn" id="hsBeaconBtn"></button><div id="drupal-modal" class="ui-front" style="display: none;"></div><div id="print-recipe--container" class="print-recipe--modal-container" aria-hidden="true" style="display: none;"><iframe id="print-recipe--iframe" class="print-recipe--modal-iframe" src="Japanese%20Milk%20Bread%20Rolls%20King%20Arthur%20Baking_files/16161.html" frameborder="0"></iframe><button id="print-recipe--close-button" class="print-recipe--modal-close-button" aria-label="print recipe modal close button"><b class="icon-close--bold"></b></button></div><div id="sliding-popup" style="bottom: 0px;" class="sliding-popup-bottom"><div class="alert alert--cookie sticky">
+  <span>
+    <p>This site uses cookies to provide you with the best experience possible.</p>
+
+  </span>
+      <a class="find-more-button alert__learnmore find-more-button-processed">Read our Privacy Policy</a>
+    <a class="agree-button alert__close"><i>Close</i></a>
+</div></div><div id="beacon-container"><div class="hsds-beacon"><div class="Beacon"><div class="sc-AxheI gkgGqG"></div><div class="sc-AxhCb ljOwHR BeaconContainer is-configDisplayRight is-manual" data-css-with-delay="false"><button data-cy="beacon-close-button" class="sc-AxhUy iLeqUU c-BeaconCloseButton is-rendered"><span class="sc-AxgMl lbFAFy c-BeaconCloseButton__label"><span data-cy="Text" class="Textcss__TextUI-cdrlb6-0 eMuyYC c-Text is-span is-13 is-default">Close</span></span><span aria-hidden="true" data-cy="Icon" class="Iconcss__IconUI-vne9x2-0 lhTUZR c-Icon is-noInteract is-iconName-cross-small is-24 c-BeaconCloseButton__iconClose" data-icon-name="cross-small"><span class="c-Icon__icon" title="cross-small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.414 12l2.293-2.293a.999.999 0 1 0-1.414-1.414L12 10.586 9.707 8.293a.999.999 0 1 0-1.414 1.414L10.586 12l-2.293 2.293a.999.999 0 1 0 1.414 1.414L12 13.414l2.293 2.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L13.414 12z"></path></svg></span><span data-cy="VisuallyHidden" class="VisuallyHiddencss__VisuallyHiddenUI-f040fk-0 btmtsE c-VisuallyHidden">cross-small</span></span></button></div><span></span><span></span></div></div></div></body></html>
